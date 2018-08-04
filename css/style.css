@@ -234,7 +234,7 @@ h5 {
 }
 
 .box-primary-nav-trigger .box-menu-text {
-  color: white;
+  color: #383838;
   text-transform: uppercase;
   font-weight: 700;
   display: none;
@@ -251,7 +251,7 @@ h5 {
   transform: translateX(-50%) translateY(-50%);
   width: 18px;
   height: 2px;
-  background-color: white;
+  background-color: #383838;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   list-style: none;
@@ -263,7 +263,7 @@ h5 {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: white;
+  background-color: #383838;
   right: 0;
   -webkit-transition: -webkit-transform 0.3s, top 0.3s, background-color 0s;
   -webkit-transition: top 0.3s, background-color 0s, -webkit-transform 0.3s;
@@ -429,99 +429,184 @@ h5 {
 /* custom home page
 ===================================================*/
 
-.heading-primary--main {
-  font-size: 6rem;
-  font-weight: 100;
-  line-height: 7rem;
-}
-
-.heading-primary {
-  color: white;
-}
-
-.heading-primary--sub {
-  font-size: 2.8rem;
-  font-weight: 300;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-  color: #0bb3c4;
-  padding-left: 0.4rem;
-}
-
 .header {
   height: 100vh;
-  background-image: url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   font-family: "Roboto Mono", monospace;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 1.7rem;
+}
+
+.menu-list {
+  list-style: none;
+  font-weight: 200; 
+  position: absolute;
+}
+
+ul.menu-list li {
+  display: inline-block;
+}
+
+ul.menu-list li:hover {
+  border-bottom: none;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+ul.menu-list li:visited {
+  color: #999;
+  text-decoration: none;
+}
+
+ul.menu-list a {
+  color: #999;
+}
+
+ul.menu-list a:hover {
+  border-bottom: none;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.slogan {
+  color: black;
+  font-family: "Roboto Mono" monospace;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 320px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .menu-list {
+    font-size: 1.4rem;
+  }
+
+  ul.menu-list li {
+    border-bottom: 1px solid #00b7c8;
+    line-height: 2rem;
+  }
+
+  .slogan {
+    margin-left: 30px;
+    line-height: 2.5rem;
+    margin-top: 260px;
+  }
+
+  .menu-list {
+    left: -10px;
+  }
+} 
+
+@media only screen and (min-width: 470px) {
+  .header {
+    font-size: 3rem;
+  }
+
+  .menu-list {
+    font-size: 2rem;
+  }
+
+  ul.menu-list li {
+    border-bottom: 1px solid #00b7c8;
+    line-height: 2rem;
+  }
+
+  .slogan {
+    margin-left: 40px;
+    line-height: 2.5rem;
+    margin-top: 260px;
+  }
+
+  .menu-list {
+    left: 0px;
+    top: 300px;
+  }
+} 
+
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 3.5rem;
+  }
+
+  .menu-list {
+    font-size: 2rem;
+  }
+
+  ul.menu-list li {
+    border-bottom: 2px solid #00b7c8;
+    line-height: 3rem;
+  }
+
+  .slogan {
+    margin-left: 100px;
+    margin-top: 250px;
+  }
+
+  .menu-list {
+    left: 60px;
+    top: 290px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    font-size: 4rem;
+  }
+
+  .menu-list {
+    font-size: 2.5rem;
+  }
+
+  ul.menu-list li {
+    border-bottom: 2px solid #00b7c8;
+    line-height: 3.5rem;
+  }
+  
+  .slogan {
+    margin-left: 140px;
+    margin-top: 240px;
+  }
+
+  .menu-list {
+    left: 100px;
+    top: 290px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    font-size: 5rem;
+  }
+
+  .menu-list {
+    font-size: 3.5rem;
+  }
+
+  ul.menu-list li {
+    border-bottom: 2px solid #00b7c8;
+    line-height: 5rem;
+  }
+  
+  .slogan {
+    margin-left: 140px;
+    margin-top: 240px;
+    font-size: 6rem;
+  }
+
+  .menu-list {
+    left: 100px;
+    top: 300px; 
+  }
 }
 
 .img-responsive {
   border-right: 5px solid white;
   border-top: 4px solid white;
-}
-
-.header__text-box {
-  position: absolute;
-  top: 45%;
-  right: 0%;
-  padding: 1rem 0rem 3rem 10rem;
-  border-left: solid white 2px;
-  /* The code above will center the top left corner of the text-box on the page, but we need
-        to center the middle of the text-box.  We use the transform to transform the position,
-        and the translate to get the width and height of the box itself.*/
-  transform: translate(-50%, -40%);
-  text-align: left;
-}
-
-@media screen and (max-width: 600px) {
-  .heading-primary--main {
-    font-size: 5rem;
-    line-height: 6rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .heading-primary--sub {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .header__text-box {
-    transform: translate(-30%, -40%);
-  }
-}
-@media screen and (max-width: 1000px) {
-  .header__text-box {
-    transform: translate(-20%, -40%);
-  }
-}
-@media screen and (max-width: 900px) {
-  .header__text-box {
-    transform: translate(-15%, -40%);
-  }
-}
-@media screen and (max-width: 960px) {
-  .header__text-box {
-    transform: translate(-10%, -40%);
-    padding-left: 7rem;
-  }
-}
-@media screen and (max-width: 600px) {
-  .header__text-box {
-    text-align: center;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    border-left: none;
-    padding: 0;
-    width: 100%;
-  }
 }
 
 /* box-intro
