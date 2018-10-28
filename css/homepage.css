@@ -47,49 +47,50 @@
     font-weight: 400;
   }
   
-  @media only screen and (min-width: 320px) {
+  @media only screen and (max-width: 424px) {
     .header {
-      font-size: 2rem;
+    font-size: 5rem;
     }
-  
+
     .menu-list {
-      font-size: 1.4rem;
+    font-size: 3.1rem;
     }
-  
+
     ul.menu-list li {
-      border-bottom: 1px solid #00b7c8;
-      line-height: 2rem;
+    border-bottom: 2px solid #00b7c8;
+    line-height: 4rem;
     }
-  
+    
     .slogan {
-      margin-left: 30px;
-      line-height: 2.5rem;
-      margin-top: 260px;
+        margin-left: 40px;
+        line-height: 5rem;
+        margin-top: 120px;
     }
-  
+    
     .menu-list {
-      left: -10px;
+        left: 0px;
+        top: 300px;
     }
   } 
   
-  @media only screen and (min-width: 470px) {
+  @media only screen and (min-width: 425px) {
     .header {
-      font-size: 3rem;
+    font-size: 5rem;
     }
-  
+
     .menu-list {
-      font-size: 2rem;
+    font-size: 3.1rem;
     }
-  
+
     ul.menu-list li {
-      border-bottom: 1px solid #00b7c8;
-      line-height: 2rem;
+    border-bottom: 2px solid #00b7c8;
+    line-height: 4rem;
     }
-  
+    
     .slogan {
       margin-left: 40px;
-      line-height: 2.5rem;
-      margin-top: 260px;
+      line-height: 5rem;
+      margin-top: 180px;
     }
   
     .menu-list {
@@ -97,58 +98,14 @@
       top: 300px;
     }
   } 
-  
-  @media only screen and (min-width: 768px) {
-    .header {
-      font-size: 3.5rem;
-    }
-  
-    .menu-list {
-      font-size: 2rem;
-    }
-  
-    ul.menu-list li {
-      border-bottom: 2px solid #00b7c8;
-      line-height: 3rem;
-    }
-  
+
+  @media only screen and (min-width: 594px) {
     .slogan {
-      margin-left: 100px;
-      margin-top: 250px;
-    }
-  
-    .menu-list {
-      left: 60px;
-      top: 290px;
+        margin-top: 240px;
     }
   }
   
-  @media only screen and (min-width: 1024px) {
-    .header {
-      font-size: 4rem;
-    }
-  
-    .menu-list {
-      font-size: 2.5rem;
-    }
-  
-    ul.menu-list li {
-      border-bottom: 2px solid #00b7c8;
-      line-height: 3.5rem;
-    }
-    
-    .slogan {
-      margin-left: 140px;
-      margin-top: 240px;
-    }
-  
-    .menu-list {
-      left: 100px;
-      top: 290px;
-    }
-  }
-  
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 900px) {
     .header {
       font-size: 5rem;
     }
