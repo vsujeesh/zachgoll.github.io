@@ -305,7 +305,6 @@ h5 {
 .box-primary-nav-trigger {
   width: 100px;
   padding-left: 1em;
-  background-color: transparent;
   height: 30px;
   line-height: 30px;
   right: 10px;
@@ -893,6 +892,10 @@ footer img {
 
 /* About page
 ==================================================*/
+
+#about-me {
+  color: black;
+}
 
 .top-bar {
   color: #333;
