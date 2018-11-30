@@ -731,6 +731,18 @@ b i:last-child {
   position: relative;
   overflow: hidden;
   display: block;
+  border: 1px solid white;
+}
+
+.portfolio_item--title {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  width: 60%;
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
 }
 
 .portfolio_item .portfolio_item_hover {
