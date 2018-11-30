@@ -737,12 +737,16 @@ b i:last-child {
 .portfolio_item--title {
   position: absolute;
   top: 25%;
-  left: 20%;
+  left: 10%;
   width: 60%;
   color: white;
   font-weight: 700;
   font-size: 3rem;
   line-height: 4rem;
+  border-bottom: solid 1px white;
+  border-top: solid 1px white;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .portfolio_item .portfolio_item_hover {
