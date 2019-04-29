@@ -1,6 +1,11 @@
 /* custom home page
 ===================================================*/
 
+body {
+  background-image: url("../img/graph-background.jpg");
+  background-size: cover;
+}
+
 .header {
     height: 100vh;
     font-family: "Menlo", "Meslo LG", monospace;

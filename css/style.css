@@ -36,8 +36,6 @@ body {
   font-family: "Menlo", "Meslo LG", monospace;
   line-height: 1.8;
   color: black;
-  background-image: url("../img/graph-background.jpg");
-  background-size: cover;
 }
 
 .no-padding {
